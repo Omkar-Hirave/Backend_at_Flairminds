@@ -1,0 +1,51 @@
+Cloning a git repository 
+1.git clone repo name 
+2.repo name might be ssh file or http file
+
+1.If you want a git repo as it is in use .(period) after the command 
+2.If you want a folder and inside that you have all the repo then dont use .(period)after the command.
+
+Initializing the new git repository:
+git init (This will initialize the repository we are  working in )
+
+Put all the files inside the folder into staging area 
+git add --a
+
+create a repository only with the help of git command line 
+curl -u "omkar-xx-x" https://api.github.com/user/repos -d '{"name":"RepoCreatedUsingGit" , "private":"false"}'
+
+
+When we have commit a change into github account using git you can make use of following code(Only if you are doing for the first time)
+git remote set-url origin https://username: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@github.com/omkar-xx-x/Git-Learning-Flairminds.git
+
+ git remote add origin <url>
+ When you use command 'git remote add origin <url>' , you are establishing a connection between your local git repository and remote repository hoisted on platform like Github
+
+ To verify connection we can make use of the git remove -v command 
+
+ To check on which branch we are we use 
+ git branch
+
+ To rename the branch to another name we can do it using following way..
+ git branch -M main(main here is the new name of the branch)
+
+ git use origin main :
+ Since , this command is too lengthy , we might need to use it again and again , rather we can use
+    git push -u origin main 
+ This way you are using above command for the first time and later you only need to use git push 
+
+Branch commands : 
+git branch (To check branch we are in) 
+
+git branch -M(to rename branch)
+
+git checkout<branch-name> (to-navigate)
+Suppose we are in main branch and we want to go to featureOne branch we can use 
+git checkout featureOne
+
+To create a new branch we can use following command 
+git checkout -b featureOne 
+Above command will create a new branch with name featureOne
+
+git branch -d featureOne 
+We must go to another branch before deleting the branch we want to delete
