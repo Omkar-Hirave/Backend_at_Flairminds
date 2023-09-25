@@ -1,0 +1,11 @@
+Why to create config file separately ? 
+1 . Only connection to the database remains in config files.
+2 . We can use it , whenever we have to connect to database , rather than writing code for connection on every file , we can create config file and store database connection inside it.
+3 . Using config , we can create connection at one location and use it again and again everywhere.
+4 . Whenever you make connection with mysql it requires more time to load , thereby reducing efficiency.
+
+5 . There are 4 important HTTP methods to perform manipulation on databases : 
+     i . PUT 
+    ii . DELETE
+    iii. POST 
+    iv . GET
