@@ -1,0 +1,13 @@
+express.Router : 
+1 .It allows you to group related routes together and separate them into different files or modules , which further makes your codebase more organized and maintainable.
+2 .This helps in larger applications to keep codebase organized
+
+  Router():
+1 . Router can be used to define routes , just like in main Express Application.
+
+Route parameters : 
+1 .Route parameters are named URL segments that are used to capture the values specified at their specified position in the URL.
+2 .The captured values are populated in the req.params object , with the name of the route parameter specified in the path as their respective keys 
+
+Controller : 
+Controller can group related request handling logic separately . Instead of defining all of your request handling logic as callback in route or route file , you can organize this behaviour using modules.
