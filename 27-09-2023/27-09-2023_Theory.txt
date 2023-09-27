@@ -1,0 +1,19 @@
+Separation of concern using MVC architecture 
+1 . Getting the data from the model into the controller and then to the main index.js file for both developer.js and tester.js file.
+2 . Storing all the database related tasks into the JS files , creating databases if they are not available , without manually interacting with mysql workbench or any other function related to it.
+3 . Use of radis : 
+API rate limiting restricts the number of API requests a client can make within specific time frame.
+
+4 . Basics of JWT . What JWT is ? 
+
+How to implement rate limiting ? 
+1 . Token Bucket 
+2 . Leaky bucket 
+3 . Fixed window 
+4 . sliding window 
+
+What are environment variables ? 
+We use environment variables to handle sensitive data such as passwords , which we should'nt hard code , or configuration details that might change between runs , like what port a server should listen on . In Node JS , these special variables acessible on the global.env obkect 
+
+What is the role of .dontenv file ? 
+The dotenv module in Node.js allows you to load environment variables from a .env file into process.env
